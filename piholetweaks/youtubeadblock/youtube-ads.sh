@@ -45,7 +45,7 @@ fi
 if 
 ls $YTADS &> /dev/null; 
 then
-$YTADS
+sudo rm $YTADS
 else
 :
 fi
