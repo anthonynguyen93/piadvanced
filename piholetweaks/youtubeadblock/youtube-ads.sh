@@ -10,6 +10,15 @@ else
 sudo mkdir /var/www/html/lists/
 fi
 
+if
+[ -d "/etc/piholeparser/youtubewildcards/" ]
+then
+echo ""
+else
+sudo mkdir /etc/piholeparser/youtubewildcards/
+sudo touch youtube-domains.txt youtube-filtered.txt youtube-ads.txt
+fi
+
 ## Directory Location
 YTOLDLIST=/var/www/html/lists/youtube.txt
 YTDOMAINS=/etc/piholeparser/youtubewildcards/youtube-domains.txt
